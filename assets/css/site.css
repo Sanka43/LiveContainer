@@ -207,7 +207,7 @@ pre code {
 .hero__content {
   position: relative;
   z-index: 2;
-  width: min(32rem, 100%);
+  width: min(38rem, 100%);
   padding:
     clamp(2.5rem, 8vh, 5rem)
     1.25rem
@@ -262,7 +262,7 @@ pre code {
 
 .hero__lead {
   margin: 0 0 1.75rem;
-  max-width: 34ch;
+  max-width: 46ch;
   color: rgba(255, 255, 255, 0.86);
   font-size: 1.05rem;
   line-height: 1.55;
