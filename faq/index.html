@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FAQ - LiveContainer</title>
+  <meta name="description" content="Common LiveContainer questions about install, signing, crashes, and guest apps.">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="icon" href="../assets/img/app-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/img/app-icon.png">
+</head>
+<body data-page="faq">
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="../"><img class="brand__icon" src="../assets/img/app-icon.png" alt="" width="28" height="28"><span class="brand__text">Live<span>Container</span></span></a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open menu">Menu</button>
+        <ul class="nav-links">
+      <li><a href="../" data-nav="home">Home</a></li>
+      <li><a href="../download/" data-nav="download">Download</a></li>
+      <li><a href="../installation/" data-nav="installation">Installation</a></li>
+      <li><a href="../sources/" data-nav="sources">Sources</a></li>
+      <li><a href="../tweaks/" data-nav="tweaks">Tweaks</a></li>
+      <li><a href="../faq/" data-nav="faq">FAQ</a></li>
+      <li><a href="../docs/intro/" data-nav="docs">Docs</a></li>
+      <li><a href="https://github.com/LiveContainer/LiveContainer" rel="noopener" target="_blank">GitHub</a></li>
+    </ul>
+  </div>
+</header>
+<main class="page-shell">
+  <article class="page-article">
+    <h1>FAQ</h1>
+    <p>Short answers first. For long step lists, open the linked guide.</p>
+<h2>What is LiveContainer?</h2>
+<p>An app launcher for iPhone and iPad. You run other apps inside it instead of installing each one on the Home Screen. It is not a jailbreak and not an emulator. See the <a href="../">home page</a> for a simple overview.</p>
+<h2>Where do I download it?</h2>
+<p>Only from official <a href="https://github.com/LiveContainer/LiveContainer/releases" rel="noopener" target="_blank">GitHub Releases</a>. Start at <a href="../download/">Download</a>.</p>
+<h2>Install or signing failed</h2>
+<ul>
+  <li>Use AltStore 2.2.1+ / SideStore 0.6.2+ (or Impactor / current iloader for the SideStore bundle).</li>
+  <li>Keep all extensions during install.</li>
+  <li>Import the certificate, then run JIT-Less Mode Diagnose.</li>
+</ul>
+<p><a href="../docs/faq/installing-livecontainer/">Installing LiveContainer FAQ</a> · <a href="../docs/faq/jit-less-mode-setup/">JIT-Less diagnose</a></p>
+<h2>Apps crash or will not open</h2>
+<ul>
+  <li>Match LiveContainer version to your iOS version (see crash FAQ).</li>
+  <li><code>mremap_encrypted() =&gt; -1</code> usually means the IPA is not decrypted.</li>
+  <li>Try sideloading the same IPA outside LiveContainer - if it fails there too, the IPA is the problem.</li>
+</ul>
+<p><a href="../docs/faq/app-crashes/">App crashes FAQ</a></p>
+<h2>App missing in LC2 / LC3</h2>
+<p>Convert it to a <strong>Shared App</strong> on the primary LiveContainer first.</p>
+<p><a href="../docs/faq/using-guest-apps/">Using guest apps</a> · <a href="../docs/guides/multiple-livecontainers/">Multiple LiveContainers</a></p>
+<h2>How do I put an app on the Home Screen?</h2>
+<p>Use the Launch App Shortcut method on iOS 16+ with LiveContainer 3.6.65+.</p>
+<p><a href="../docs/guides/add-to-home-screen/">Add to Home Screen guide</a></p>
+<h2>Widgets and app extensions?</h2>
+<p>Generally not supported for guest apps - those need extra app IDs.</p>
+<h2>More questions</h2>
+<ul>
+  <li><a href="../docs/faq/">Full FAQ index</a></li>
+  <li><a href="../docs/faq/other-questions/">Policy / other questions</a></li>
+  <li><a href="../sources/">Sources</a> · <a href="../tweaks/">Tweaks</a> · <a href="../installation/">Installation</a></li>
+</ul>
+  </article>
+</main>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p>Independent documentation hub for LiveContainer. Not an official project site.</p>
+    <p><a href="https://github.com/LiveContainer/LiveContainer" rel="noopener" target="_blank">Official GitHub</a> - <a href="https://livecontainer.github.io/" rel="noopener" target="_blank">Official docs</a></p>
+  </div>
+</footer>
+<script src="../assets/js/site.js"></script>
+</body>
+</html>

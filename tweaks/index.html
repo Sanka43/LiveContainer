@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tweaks - LiveContainer</title>
+  <meta name="description" content="Load dylib and framework tweaks inside LiveContainer guest apps.">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="icon" href="../assets/img/app-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/img/app-icon.png">
+</head>
+<body data-page="tweaks">
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="../"><img class="brand__icon" src="../assets/img/app-icon.png" alt="" width="28" height="28"><span class="brand__text">Live<span>Container</span></span></a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open menu">Menu</button>
+        <ul class="nav-links">
+      <li><a href="../" data-nav="home">Home</a></li>
+      <li><a href="../download/" data-nav="download">Download</a></li>
+      <li><a href="../installation/" data-nav="installation">Installation</a></li>
+      <li><a href="../sources/" data-nav="sources">Sources</a></li>
+      <li><a href="../tweaks/" data-nav="tweaks">Tweaks</a></li>
+      <li><a href="../faq/" data-nav="faq">FAQ</a></li>
+      <li><a href="../docs/intro/" data-nav="docs">Docs</a></li>
+      <li><a href="https://github.com/LiveContainer/LiveContainer" rel="noopener" target="_blank">GitHub</a></li>
+    </ul>
+  </div>
+</header>
+<main class="page-shell">
+  <article class="page-article">
+    <h1>Tweaks</h1>
+    <p>LiveContainer can load tweaks into apps you run inside it. A small loader (TweakLoader) is injected when apps are prepared, then it loads Ellekit and your tweak files.</p>
+<h2>What you can load</h2>
+<ul>
+  <li><code>.dylib</code> files</li>
+  <li><code>.framework</code> bundles (need a valid Info.plist and executable name)</li>
+</ul>
+<h2>Where tweaks live</h2>
+<ul>
+  <li><strong>Global Tweaks folder</strong> - applies to every guest app.</li>
+  <li><strong>App-specific folder</strong> - only for apps you assign that folder to.</li>
+</ul>
+<p>Load order is roughly: Ellekit / CydiaSubstrate compatibility layer, then global tweaks, then the app folder.</p>
+<h2>Assign tweaks to an app</h2>
+<ol>
+  <li>Use the primary (blue) LiveContainer and a private app when managing tweak folders.</li>
+  <li>On the Tweaks tab, create or import a folder.</li>
+  <li>Open the app settings and choose that folder under <strong>Tweak Folder</strong>.</li>
+  <li>For shared apps, convert to private, assign the folder, then convert back if needed.</li>
+</ol>
+<h2>Signing</h2>
+<p>LiveContainer can resign tweaks automatically before launch when signatures look outdated. You can also tap <strong>Sign</strong> on the Tweaks tab.</p>
+<h2>If tweaks do not load</h2>
+<ul>
+  <li>Confirm the folder is assigned and TweakLoader is not disabled in app settings.</li>
+  <li>Check <strong>Don&apos;t Inject TweakLoader</strong> / <strong>Don&apos;t Load TweakLoader</strong> - both on means no tweaks run.</li>
+  <li>Resign the tweaks manually.</li>
+  <li>Some tweaks work better with direct injection instead of the loader.</li>
+</ul>
+<div class="page-links">
+  <a href="../docs/guides/tweaks/">Full Tweaks guide</a>
+  <a href="../docs/guides/app-settings/">App Settings</a>
+  <a href="../faq/">FAQ</a>
+</div>
+  </article>
+</main>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p>Independent documentation hub for LiveContainer. Not an official project site.</p>
+    <p><a href="https://github.com/LiveContainer/LiveContainer" rel="noopener" target="_blank">Official GitHub</a> - <a href="https://livecontainer.github.io/" rel="noopener" target="_blank">Official docs</a></p>
+  </div>
+</footer>
+<script src="../assets/js/site.js"></script>
+</body>
+</html>

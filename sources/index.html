@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sources - LiveContainer</title>
+  <meta name="description" content="Add app catalogs in LiveContainer and install from remote sources.">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="icon" href="../assets/img/app-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/img/app-icon.png">
+</head>
+<body data-page="sources">
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="../"><img class="brand__icon" src="../assets/img/app-icon.png" alt="" width="28" height="28"><span class="brand__text">Live<span>Container</span></span></a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open menu">Menu</button>
+        <ul class="nav-links">
+      <li><a href="../" data-nav="home">Home</a></li>
+      <li><a href="../download/" data-nav="download">Download</a></li>
+      <li><a href="../installation/" data-nav="installation">Installation</a></li>
+      <li><a href="../sources/" data-nav="sources">Sources</a></li>
+      <li><a href="../tweaks/" data-nav="tweaks">Tweaks</a></li>
+      <li><a href="../faq/" data-nav="faq">FAQ</a></li>
+      <li><a href="../docs/intro/" data-nav="docs">Docs</a></li>
+      <li><a href="https://github.com/LiveContainer/LiveContainer" rel="noopener" target="_blank">GitHub</a></li>
+    </ul>
+  </div>
+</header>
+<main class="page-shell">
+  <article class="page-article">
+    <h1>Sources</h1>
+    <p>Sources are catalog links inside LiveContainer. They list apps you can install without hunting for IPA files by hand.</p>
+<h2>Add a source</h2>
+<ol>
+  <li>Open the Sources tab in LiveContainer.</li>
+  <li>Tap the plus control.</li>
+  <li>Paste the catalog URL and confirm.</li>
+</ol>
+<p>You can also open a deep link like <code>livecontainer://source?url=&lt;encoded_source_url&gt;</code>. That jumps to Sources and tries to add the catalog.</p>
+<h2>Refresh and remove</h2>
+<ul>
+  <li>Refresh one source, or use <strong>Refresh All</strong> to update listings.</li>
+  <li>Remove a source from its menu or with a swipe.</li>
+</ul>
+<h2>Install from a source</h2>
+<ol>
+  <li>Expand a source to see its apps.</li>
+  <li>Tap <strong>Install</strong> on the app you want.</li>
+  <li>LiveContainer moves to Apps and downloads the latest IPA URL from that listing.</li>
+</ol>
+<p>Large catalogs (about 50+ apps) are easier to browse with search.</p>
+<h2>Common problems</h2>
+<ul>
+  <li><strong>Invalid URL</strong> - the link is wrong or not a LiveContainer-compatible source.</li>
+  <li><strong>Duplicate source</strong> - that catalog is already added.</li>
+  <li><strong>Unable to refresh</strong> - network issue or the source host is down.</li>
+  <li><strong>No apps available</strong> - the catalog returned an empty list.</li>
+</ul>
+<div class="page-links">
+  <a href="../docs/guides/sources/">Full Sources guide</a>
+  <a href="../tweaks/">Tweaks</a>
+  <a href="../installation/">Installation</a>
+</div>
+  </article>
+</main>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p>Independent documentation hub for LiveContainer. Not an official project site.</p>
+    <p><a href="https://github.com/LiveContainer/LiveContainer" rel="noopener" target="_blank">Official GitHub</a> - <a href="https://livecontainer.github.io/" rel="noopener" target="_blank">Official docs</a></p>
+  </div>
+</footer>
+<script src="../assets/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LiveContainer – Run iOS Apps Without Jailbreak</title>
+  <meta name="description" content="Get LiveContainer IPA + SideStore to run multiple iOS apps without jailbreak. Works on iOS 15–17+, iOS 27 beta, with JIT and sandbox support.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="icon" href="assets/img/app-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/app-icon.png">
+</head>
+<body data-page="home">
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="./"><img class="brand__icon" src="assets/img/app-icon.png" alt="" width="28" height="28"><span class="brand__text">Live<span>Container</span></span></a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open menu">Menu</button>
+    <ul class="nav-links">
+      <li><a href="./" data-nav="home">Home</a></li>
+      <li><a href="./download/" data-nav="download">Download</a></li>
+      <li><a href="./installation/" data-nav="installation">Installation</a></li>
+      <li><a href="./sources/" data-nav="sources">Sources</a></li>
+      <li><a href="./tweaks/" data-nav="tweaks">Tweaks</a></li>
+      <li><a href="./faq/" data-nav="faq">FAQ</a></li>
+      <li><a href="./docs/intro/" data-nav="docs">Docs</a></li>
+      <li><a href="https://github.com/LiveContainer/LiveContainer" rel="noopener" target="_blank">GitHub</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero" aria-label="Hero">
+  <div class="hero__plane" aria-hidden="true"></div>
+  <div class="hero__aurora" aria-hidden="true"></div>
+  <div class="hero__inner">
+    <div class="hero__content">
+      <div class="hero__mark">
+        <img class="hero__icon" src="assets/img/app-icon.png" alt="" width="72" height="72">
+        <p class="hero__brand">LiveContainer</p>
+      </div>
+      <h1 class="hero__headline">Run iOS apps without jailbreak</h1>
+      <p class="hero__lead">Open-source launcher for multiple apps in isolated containers — with SideStore, JIT, and sandbox on iOS 15–17+.</p>
+      <div class="cta-row">
+        <a class="btn btn--primary" href="download/">Download IPA</a>
+        <a class="btn btn--ghost" href="#what-is">Learn more</a>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <img class="hero__shot" src="assets/img/hero-screenshot.png" alt="LiveContainer My Apps screen on iPhone" width="476" height="965">
+    </div>
+  </div>
+</section>
+
+<main class="home">
+  <section class="home-section home-section--intro" id="what-is">
+    <div class="home-wrap home-intro">
+      <header class="home-intro__lead">
+        <p class="home-kicker">Overview</p>
+        <h2 class="home-title">Run iOS apps without jailbreak</h2>
+        <p class="home-lead">LiveContainer is an open-source iOS app launcher that lets you run multiple iOS apps inside isolated containers — without jailbreaking your iPhone or iPad.</p>
+        <p class="home-intro__note">Manage and launch apps from one place while easing the usual limits of standard sideloading. Compatibility depends on your device, iOS version, and LiveContainer release.</p>
+      </header>
+      <ul class="home-intro__caps" aria-label="Key capabilities">
+        <li>
+          <strong>iOS &amp; iPadOS 15+</strong>
+          <span>Core support for modern iPhone and iPad</span>
+        </li>
+        <li>
+          <strong>SideStore ready</strong>
+          <span>Standalone IPA or bundled with SideStore</span>
+        </li>
+        <li>
+          <strong>Multiple containers</strong>
+          <span>Separate data and versions per app</span>
+        </li>
+        <li>
+          <strong>Multitasking &amp; JIT</strong>
+          <span>Windows and JIT workflows where supported</span>
+        </li>
+        <li>
+          <strong>Home Screen shortcuts</strong>
+          <span>Launch guest apps more directly</span>
+        </li>
+        <li>
+          <strong>App management</strong>
+          <span>Import IPAs, storage, and settings in-app</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="home-section home-section--story" id="what-it-is">
+    <div class="home-wrap home-story">
+      <header class="home-story__lead">
+        <p class="home-kicker">What is LiveContainer?</p>
+        <h2 class="home-title">Apps in an isolated environment — not separate system installs.</h2>
+        <p class="home-story__dek">LiveContainer runs guest apps inside its own sandbox instead of installing every IPA as a separate system application.</p>
+      </header>
+
+      <ol class="home-story__steps">
+        <li>
+          <span class="home-story__num" aria-hidden="true">01</span>
+          <div>
+            <strong>Isolate</strong>
+            <p>Apps launch inside LiveContainer’s environment — not as standalone system installs on your device.</p>
+          </div>
+        </li>
+        <li>
+          <span class="home-story__num" aria-hidden="true">02</span>
+          <div>
+            <strong>Import &amp; manage</strong>
+            <p>Install LiveContainer, then import IPA files and manage them from inside the app.</p>
+          </div>
+        </li>
+        <li>
+          <span class="home-story__num" aria-hidden="true">03</span>
+          <div>
+            <strong>Multiply containers</strong>
+            <p>Create multiple containers for the same app so different versions or data can coexist.</p>
+          </div>
+        </li>
+      </ol>
+
+      <ul class="home-story__points" aria-label="In short">
+        <li>No jailbreak required</li>
+        <li>Import and manage IPAs inside one app</li>
+        <li>Multiple containers per application</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="home-section home-section--features" id="features">
+    <div class="home-wrap">
+      <p class="home-kicker">Features</p>
+      <h2 class="home-title">Built for sideloading without the usual limits.</h2>
+      <p class="home-lead">Everything you need to install, launch, and manage compatible apps from one place.</p>
+      <ul class="feature-grid">
+        <li>
+          <h3>Run apps in isolated containers</h3>
+          <p>Install and launch compatible IPA files inside LiveContainer without installing each application separately on your device.</p>
+        </li>
+        <li>
+          <h3>No jailbreak required</h3>
+          <p>Works without a jailbreak, so you can run additional iOS apps while keeping your device in a standard, non-jailbroken state.</p>
+        </li>
+        <li>
+          <h3>Multiple app containers</h3>
+          <p>Create separate containers for the same application with different data — useful for multiple configurations or versions.</p>
+        </li>
+        <li>
+          <h3>JIT support</h3>
+          <p>Supports JIT-based workflows where available to improve compatibility and performance for certain applications and tools.</p>
+        </li>
+        <li>
+          <h3>Multitasking</h3>
+          <p>On supported iOS and iPadOS versions, compatible apps can run in multitasking windows. On iPad, apps can also use native-style window layouts.</p>
+        </li>
+        <li>
+          <h3>Multiple LiveContainers</h3>
+          <p>Configure multiple LiveContainer instances to run different applications simultaneously, depending on your device and iOS version.</p>
+        </li>
+        <li>
+          <h3>Home Screen shortcuts</h3>
+          <p>Add compatible apps to the Home Screen so you can launch them more directly without opening LiveContainer first.</p>
+        </li>
+        <li>
+          <h3>App management</h3>
+          <p>Import IPA files, manage installed apps and containers, view storage usage, clear temporary data, and adjust application settings.</p>
+        </li>
+        <li>
+          <h3>SideStore integration</h3>
+          <p>Available as a standalone IPA or as a LiveContainer + SideStore package for easier install and IPA management.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="home-section home-section--whats-new" id="whats-new">
+    <div class="home-wrap">
+      <p class="home-kicker">What's new</p>
+      <h2 class="home-title">Recent improvements across management, multitasking, and compatibility.</h2>
+      <p class="home-lead">Recent LiveContainer releases include updates to app management, multitasking, JIT support, storage management, and iOS compatibility.</p>
+      <div class="whats-new">
+        <article class="whats-new__item">
+          <h3>Storage management</h3>
+          <p>A dedicated storage view shows app bundle sizes, container storage, temporary files, app group data, tweaks and related files, plus last-used information. Clean temporary files and caches directly from LiveContainer.</p>
+        </article>
+        <article class="whats-new__item">
+          <h3>Improved multitasking</h3>
+          <p>Per-app settings, better window handling, additional animations, and improved dock behavior. Compatible apps can open in virtual windows that can be resized and scaled. On supported iPads, apps can use separate system-style windows.</p>
+        </article>
+        <article class="whats-new__item">
+          <h3>Share to LiveContainer</h3>
+          <p>Send URLs and files directly to compatible apps with the share extension. When an IPA is shared, you can install it inside LiveContainer or through the built-in SideStore when available.</p>
+        </article>
+        <article class="whats-new__item">
+          <h3>JIT improvements</h3>
+          <p>JIT workflows through compatible tools, including StikDebug/StosDebug depending on the release and configuration.</p>
+        </article>
+        <article class="whats-new__item">
+          <h3>Tweak support</h3>
+          <p>Tweak-related workflows through TweakLoader on compatible configurations, with tweak management from the LiveContainer interface.</p>
+        </article>
+        <article class="whats-new__item">
+          <h3>iOS 27 developer beta</h3>
+          <p>Recent releases include support for iOS 27 developer beta versions. Compatibility may vary between releases and devices.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section home-section--download" id="download">
+    <div class="home-wrap home-download">
+      <div>
+        <p class="home-kicker">Download</p>
+        <h2 class="home-title">Get the LiveContainer IPA</h2>
+        <p class="home-lead">Download the latest LiveContainer IPA and installation files from a trusted source. Choose standalone LiveContainer or the LiveContainer + SideStore package.</p>
+        <p class="home-download__note">Always use the latest compatible release and check the official project documentation for current requirements and known issues.</p>
+        <div class="cta-row cta-row--ink">
+          <a class="btn btn--solid" href="download/">Download LiveContainer</a>
+          <a class="btn btn--outline" href="installation/">Installation guide</a>
+        </div>
+      </div>
+      <ul class="download-picks">
+        <li>
+          <strong>LiveContainer</strong>
+          <span>Standalone IPA if you already use SideStore or AltStore.</span>
+        </li>
+        <li>
+          <strong>LiveContainer + SideStore</strong>
+          <span>Bundled package for installing and managing IPAs together.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="home-section home-section--compat" id="compatibility">
+    <div class="home-wrap">
+      <p class="home-kicker">Compatibility</p>
+      <h2 class="home-title">Supported iOS versions</h2>
+      <p class="home-lead">LiveContainer is designed for modern iOS and iPadOS — always check release notes before installing.</p>
+      <ul class="compat-list">
+        <li>
+          <strong>iOS 15 and later</strong>
+          <span>Core support for iPhone</span>
+        </li>
+        <li>
+          <strong>iPadOS 15 and later</strong>
+          <span>Core support for iPad</span>
+        </li>
+        <li>
+          <strong>Multitasking on 16.0+</strong>
+          <span>Requires iOS / iPadOS 16.0 or later</span>
+        </li>
+        <li>
+          <strong>SideStore 0.6.0+</strong>
+          <span>Or compatible AltStore versions, depending on method</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="home-section home-section--devices" id="devices">
+    <div class="home-wrap">
+      <p class="home-kicker">Devices</p>
+      <h2 class="home-title">Supported iPhone and iPad models</h2>
+      <p class="home-lead">LiveContainer supports a wide range of modern devices running a compatible iOS or iPadOS version. Final compatibility depends on the installed OS and LiveContainer release.</p>
+      <div class="device-columns">
+        <div class="device-column">
+          <h3>Supported iPhone models</h3>
+          <ul>
+            <li>iPhone 11</li>
+            <li>iPhone 11 Pro / Pro Max</li>
+            <li>iPhone SE (2nd generation)</li>
+            <li>iPhone 12 / 12 mini / 12 Pro / 12 Pro Max</li>
+            <li>iPhone 13 / 13 mini / 13 Pro / 13 Pro Max</li>
+            <li>iPhone SE (3rd generation)</li>
+            <li>iPhone 14 / 14 Plus / 14 Pro / 14 Pro Max</li>
+            <li>iPhone 15 / 15 Plus / 15 Pro / 15 Pro Max</li>
+            <li>iPhone 16 / 16 Plus / 16 Pro / 16 Pro Max</li>
+            <li>iPhone 17 series and newer models where supported</li>
+          </ul>
+        </div>
+        <div class="device-column">
+          <h3>Supported iPad models</h3>
+          <ul>
+            <li>iPad (7th generation) and newer</li>
+            <li>iPad mini (5th generation) and newer</li>
+            <li>iPad Air (3rd generation) and newer</li>
+            <li>iPad Pro 11-inch</li>
+            <li>iPad Pro 12.9-inch</li>
+            <li>Newer iPad Pro models with Apple silicon</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section home-section--setup" id="setup">
+    <div class="home-wrap home-setup">
+      <div>
+        <p class="home-kicker">Trust and setup</p>
+        <h2 class="home-title">Trust the developer certificate after install.</h2>
+        <p class="home-lead">After installing LiveContainer or SideStore, you may need to trust the developer certificate before using the application.</p>
+      </div>
+      <div class="setup-steps">
+        <p>On supported iOS versions:</p>
+        <p class="setup-path">Settings → Privacy &amp; Security → Developer Mode</p>
+        <p>Depending on your signing method, you may also need to trust the developer profile under the appropriate device management settings.</p>
+        <a class="setup-link" href="installation/">Full installation walkthrough</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section home-section--faq" id="faq">
+    <div class="home-wrap">
+      <p class="home-kicker">FAQ</p>
+      <h2 class="home-title">Frequently asked questions</h2>
+      <p class="home-lead">Quick answers to the most common LiveContainer questions.</p>
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>Does LiveContainer require a jailbreak?</summary>
+          <p>No. LiveContainer is designed to run without a jailbreak.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What iOS versions does LiveContainer support?</summary>
+          <p>LiveContainer supports iOS/iPadOS 15 and later, with exact compatibility depending on the release and device.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can I install multiple apps?</summary>
+          <p>Yes. LiveContainer allows you to manage multiple compatible applications inside its container environment.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can I install multiple versions of the same app?</summary>
+          <p>Yes. Multiple containers can be created for supported applications, allowing different app data or configurations.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Does LiveContainer support iPad?</summary>
+          <p>Yes. LiveContainer supports compatible iPad models running supported iPadOS versions. Multitasking and native window features are especially useful on iPad.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Does LiveContainer support iOS 27?</summary>
+          <p>Recent releases include support for iOS 27 developer beta versions. However, beta compatibility can change, so always check the requirements for your LiveContainer version.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Does LiveContainer work with SideStore?</summary>
+          <p>Yes. LiveContainer is available as a standalone version and a LiveContainer + SideStore version.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Does LiveContainer support JIT?</summary>
+          <p>Yes. LiveContainer supports JIT-based workflows where the required device, iOS version, and JIT tool are compatible.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can I add LiveContainer apps to the Home Screen?</summary>
+          <p>Yes. Supported apps can be added to the Home Screen for faster launching.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Is LiveContainer free?</summary>
+          <p>LiveContainer is an open-source project. Installation and signing requirements may vary depending on the sideloading method you use.</p>
+        </details>
+      </div>
+      <p class="faq-more"><a href="faq/">Browse the full FAQ</a></p>
+    </div>
+  </section>
+
+  <section class="home-section home-section--trust">
+    <div class="home-wrap home-trust">
+      <p class="home-kicker">About this site</p>
+      <h2 class="home-title">Independent docs for an open-source project.</h2>
+      <p>livecontainer.site is not the official LiveContainer website. Prefer official open-source builds only — closed third-party builds can read everything inside your containers.</p>
+      <div class="cta-row cta-row--ink">
+        <a class="btn btn--solid" href="https://github.com/LiveContainer/LiveContainer" rel="noopener" target="_blank">Official GitHub</a>
+        <a class="btn btn--outline" href="https://livecontainer.github.io/" rel="noopener" target="_blank">Official docs</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section home-section--close">
+    <div class="home-wrap home-close">
+      <h2 class="home-close__title">Ready to run apps without jailbreak?</h2>
+      <p>Download the latest LiveContainer IPA, finish trust and signing setup, then import your first app.</p>
+      <div class="cta-row">
+        <a class="btn btn--solid" href="download/">Download IPA</a>
+        <a class="btn btn--outline" href="docs/intro/">Read the introduction</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p>Independent documentation hub for LiveContainer. Not an official project site.</p>
+    <p><a href="https://github.com/LiveContainer/LiveContainer" rel="noopener" target="_blank">Official GitHub</a> - <a href="https://livecontainer.github.io/" rel="noopener" target="_blank">Official docs</a></p>
+  </div>
+</footer>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Multiple LiveContainers - LiveContainer</title>
+  <meta name="description" content="Rewritten LiveContainer documentation for Multiple LiveContainers.">
+  <link rel="stylesheet" href="../../../assets/css/site.css">
+  <link rel="icon" href="../../../assets/img/app-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../../../assets/img/app-icon.png">
+</head>
+<body data-page="guides-multiple-livecontainers">
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="../../../"><img class="brand__icon" src="../../../assets/img/app-icon.png" alt="" width="28" height="28"><span class="brand__text">Live<span>Container</span></span></a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open menu">Menu</button>
+        <ul class="nav-links">
+      <li><a href="../../../" data-nav="home">Home</a></li>
+      <li><a href="../../../download/" data-nav="download">Download</a></li>
+      <li><a href="../../../installation/" data-nav="installation">Installation</a></li>
+      <li><a href="../../../sources/" data-nav="sources">Sources</a></li>
+      <li><a href="../../../tweaks/" data-nav="tweaks">Tweaks</a></li>
+      <li><a href="../../../faq/" data-nav="faq">FAQ</a></li>
+      <li><a href="../../../docs/intro/" data-nav="docs">Docs</a></li>
+      <li><a href="https://github.com/LiveContainer/LiveContainer" rel="noopener" target="_blank">GitHub</a></li>
+    </ul>
+  </div>
+</header>
+<main class="docs-shell">
+  <div class="docs-mobile-bar">
+    <button class="sidebar-toggle" type="button" data-sidebar-toggle>Docs menu</button>
+  </div>
+  <div class="sidebar-backdrop" data-sidebar-backdrop></div>
+  <aside class="docs-sidebar" id="docs-sidebar">
+  <h2>Documentation</h2>
+  <ul class="docs-nav">
+    <li><a href="../../../docs/intro/" data-doc="intro">Introduction</a></li>
+    <li>
+      <span class="nav-group-label">Installation</span>
+      <ul class="nav-sub">
+        <li><a href="../../../docs/installation/" data-doc="installation">Overview</a></li>
+        <li><a href="../../../docs/installation/standalone/" data-doc="installation-standalone">Standalone</a></li>
+        <li><a href="../../../docs/installation/lc_sidestore/" data-doc="installation-lc_sidestore">LiveContainer + SideStore</a></li>
+      </ul>
+    </li>
+    <li>
+      <span class="nav-group-label">Guides</span>
+      <ul class="nav-sub">
+        <li><a href="../../../docs/guides/add-to-home-screen/" data-doc="guides-add-to-home-screen">Add to Home Screen</a></li>
+        <li><a href="../../../docs/guides/sources/" data-doc="guides-sources">Sources</a></li>
+        <li><a href="../../../docs/guides/app-settings/" data-doc="guides-app-settings">App Settings</a></li>
+        <li><a href="../../../docs/guides/containers-and-external-data/" data-doc="guides-containers-and-external-data">Containers &amp; External Data</a></li>
+        <li><a href="../../../docs/guides/data-management/" data-doc="guides-data-management">Data Management</a></li>
+        <li><a href="../../../docs/guides/jit-support/" data-doc="guides-jit-support">JIT Support</a></li>
+        <li><a href="../../../docs/guides/tweaks/" data-doc="guides-tweaks">Tweaks</a></li>
+        <li><a href="../../../docs/guides/multiple-livecontainers/" data-doc="guides-multiple-livecontainers">Multiple LiveContainers</a></li>
+        <li><a href="../../../docs/guides/multitask/" data-doc="guides-multitask">Multitask</a></li>
+        <li><a href="../../../docs/guides/lock-app/" data-doc="guides-lock-app">Lock App</a></li>
+        <li><a href="../../../docs/guides/refresh-verification/" data-doc="guides-refresh-verification">Refresh Verification</a></li>
+      </ul>
+    </li>
+    <li>
+      <span class="nav-group-label">Development</span>
+      <ul class="nav-sub">
+        <li><a href="../../../docs/development/building/" data-doc="development-building">Building</a></li>
+        <li><a href="../../../docs/development/architecture/" data-doc="development-architecture">Architecture</a></li>
+      </ul>
+    </li>
+    <li>
+      <span class="nav-group-label">FAQ</span>
+      <ul class="nav-sub">
+        <li><a href="../../../docs/faq/" data-doc="faq">Overview</a></li>
+        <li><a href="../../../docs/faq/installing-livecontainer/" data-doc="faq-installing-livecontainer">Installing LiveContainer</a></li>
+        <li><a href="../../../docs/faq/jit-less-mode-setup/" data-doc="faq-jit-less-mode-setup">JIT-Less Mode Diagnose</a></li>
+        <li><a href="../../../docs/faq/app-crashes/" data-doc="faq-app-crashes">App Crashes</a></li>
+        <li><a href="../../../docs/faq/using-guest-apps/" data-doc="faq-using-guest-apps">Using Guest Apps</a></li>
+        <li><a href="../../../docs/faq/other-questions/" data-doc="faq-other-questions">Other Questions</a></li>
+      </ul>
+    </li>
+  </ul>
+</aside>
+  <article class="docs-article">
+    <h1>Multiple LiveContainers</h1>
+    <p>Extra LiveContainer instances (often called LC2 / LC3) let you run more guests in parallel and keep one instance free for helpers such as StikDebug.</p>
+<h2>Install another instance</h2>
+<ol>
+  <li>Open Settings > <strong>Install Another LiveContainer</strong>.</li>
+  <li>Prepare LC2 or LC3; LiveContainer generates an IPA.</li>
+  <li>Install that IPA with AltStore or SideStore (or save it for customization).</li>
+  <li>Optional Game Mode: enable <strong>Set Category as Game</strong> and <strong>Allow Game Mode</strong> before installing.</li>
+</ol>
+<p>Status indicators show a checkmark when an instance is detected and a cross when it is not.</p>
+<h2>Share apps across instances</h2>
+<p>On the primary (blue) LiveContainer, convert an app to a Shared App, then reopen gray instances to launch that shared guest.</p>
+<h2>How launches are dispatched</h2>
+<ul>
+  <li>URL schemes / App Clips prefer the blue instance first, switch if that app is already running elsewhere, otherwise pick a free instance.</li>
+  <li>Launch App Shortcuts dispatch in the background and only open a free instance.</li>
+  <li>If every instance is busy, LiveContainer asks whether to open in another instance or terminate and relaunch in the first.</li>
+</ul>
+<div class="callout callout--note"><strong>Missing in other instances?</strong><p>Convert the app to a Shared App on the primary LiveContainer first.</p></div>
+    <div class="official-sources"><strong>Official sources:</strong> Cross-check details on the <a href="https://livecontainer.github.io/docs/guides/multiple-livecontainers" rel="noopener" target="_blank">official documentation</a> and the <a href="https://github.com/LiveContainer/LiveContainer" rel="noopener" target="_blank">LiveContainer repository</a>.</div>
+    <nav class="pager" aria-label="Pagination"><a href="../../../docs/guides/tweaks/"><span>Previous</span>Tweaks</a><a href="../../../docs/guides/multitask/"><span>Next</span>Multitask</a></nav>
+  </article>
+</main>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p>Independent documentation hub for LiveContainer. Not an official project site.</p>
+    <p><a href="https://github.com/LiveContainer/LiveContainer" rel="noopener" target="_blank">Official GitHub</a> - <a href="https://livecontainer.github.io/" rel="noopener" target="_blank">Official docs</a></p>
+  </div>
+</footer>
+<script src="../../../assets/js/site.js"></script>
+</body>
+</html>

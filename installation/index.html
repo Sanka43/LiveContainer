@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Installation - LiveContainer</title>
+  <meta name="description" content="Install LiveContainer on iPhone or iPad with AltStore, SideStore, Impactor, or iloader.">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="icon" href="../assets/img/app-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/img/app-icon.png">
+</head>
+<body data-page="installation">
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="../"><img class="brand__icon" src="../assets/img/app-icon.png" alt="" width="28" height="28"><span class="brand__text">Live<span>Container</span></span></a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open menu">Menu</button>
+        <ul class="nav-links">
+      <li><a href="../" data-nav="home">Home</a></li>
+      <li><a href="../download/" data-nav="download">Download</a></li>
+      <li><a href="../installation/" data-nav="installation">Installation</a></li>
+      <li><a href="../sources/" data-nav="sources">Sources</a></li>
+      <li><a href="../tweaks/" data-nav="tweaks">Tweaks</a></li>
+      <li><a href="../faq/" data-nav="faq">FAQ</a></li>
+      <li><a href="../docs/intro/" data-nav="docs">Docs</a></li>
+      <li><a href="https://github.com/LiveContainer/LiveContainer" rel="noopener" target="_blank">GitHub</a></li>
+    </ul>
+  </div>
+</header>
+<main class="page-shell">
+  <article class="page-article">
+    <h1>Installation</h1>
+    <p>Install LiveContainer once, import your signing certificate, then add apps as IPAs. You need iOS / iPadOS 15 or newer (16+ for multitasking).</p>
+<div class="callout callout--warn"><strong>Before you start</strong><p>Only install official open-source builds from GitHub. Keep app extensions when the installer asks (Use Main Profile / Keep All Extensions).</p></div>
+<h2>1. Choose a package</h2>
+<ul>
+  <li><strong>Standalone</strong> - if AltStore or SideStore is already on your device.</li>
+  <li><strong>LiveContainer + SideStore</strong> - if you want both in one free app slot.</li>
+</ul>
+<p>Get the IPA from the <a href="../download/">Download</a> page.</p>
+<h2>2. Install the IPA</h2>
+<h3>Standalone</h3>
+<p>Sideload with AltStore 2.2.1+ or SideStore 0.6.2+. After install, open LiveContainer Settings and tap <strong>Import Certificate from AltStore/SideStore</strong>. Export when asked, then run <strong>JIT-Less Mode Diagnose</strong> until the test passes.</p>
+<p><a href="../docs/installation/standalone/">Detailed standalone steps</a></p>
+<h3>LiveContainer + SideStore</h3>
+<p>Install with Impactor, a current iloader build, or by upgrading through an existing SideStore (keep all extensions). Then open the built-in SideStore, sign in, refresh apps, and import the certificate into LiveContainer.</p>
+<p><a href="../docs/installation/lc_sidestore/">Detailed LiveContainer + SideStore steps</a></p>
+<h2>3. Confirm signing works</h2>
+<ol>
+  <li>Open <strong>JIT-Less Mode Diagnose</strong>.</li>
+  <li>Run <strong>Test JIT-Less Mode</strong>.</li>
+  <li>When you see a pass result, you can add guest apps.</li>
+</ol>
+<p>If checks stay red, see the <a href="../faq/">FAQ</a> and the <a href="../docs/faq/jit-less-mode-setup/">diagnose guide</a>.</p>
+<h2>4. Add your first app</h2>
+<ul>
+  <li>Tap the plus button and pick an IPA.</li>
+  <li>Select which app should open next.</li>
+  <li>Long-press an app for settings, containers, and Home Screen shortcuts.</li>
+</ul>
+<div class="page-links">
+  <a href="../download/">Download builds</a>
+  <a href="../docs/installation/">Full installation docs</a>
+  <a href="../docs/guides/add-to-home-screen/">Add to Home Screen</a>
+</div>
+  </article>
+</main>
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p>Independent documentation hub for LiveContainer. Not an official project site.</p>
+    <p><a href="https://github.com/LiveContainer/LiveContainer" rel="noopener" target="_blank">Official GitHub</a> - <a href="https://livecontainer.github.io/" rel="noopener" target="_blank">Official docs</a></p>
+  </div>
+</footer>
+<script src="../assets/js/site.js"></script>
+</body>
+</html>
