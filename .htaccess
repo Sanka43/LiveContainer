@@ -1,9 +1,14 @@
 Options +Indexes
 DirectoryIndex index.html
 
-# Prefer clean directory URLs when hosting at domain root
 <IfModule mod_rewrite.c>
   RewriteEngine On
+
+  # Force canonical host: livecontainer.site -> www.livecontainer.site
+  RewriteCond %{HTTP_HOST} ^livecontainer\.site$ [NC]
+  RewriteRule ^(.*)$ https://www.livecontainer.site/$1 [L,R=301]
+
+  # Prefer clean directory URLs when hosting at domain root
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME}.html -f
