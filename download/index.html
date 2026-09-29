@@ -39,61 +39,106 @@
 </header>
 <main class="page-shell">
   <article class="page-article">
-    <h1>Download</h1>
-    <div class="callout callout--warn">
-      <strong>Use official builds only</strong>
-      <p>Only download LiveContainer from the links on this page. Closed third-party builds can read everything inside your containers, including passwords and tokens.</p>
+    <header class="dl-hero">
+      <h1>Download LiveContainer</h1>
+      <p class="dl-hero__lead">Pick a package, download the IPA, then follow the <a href="../installation/">Installation</a> guide.</p>
+      <div class="dl-hero__meta">
+        <span class="dl-pill dl-pill--ok">Official builds</span>
+        <span class="dl-pill">Stable 3.8.0</span>
+        <span class="dl-pill">Nightly 20260808</span>
+      </div>
+    </header>
+
+    <div class="callout callout--warn dl-callout">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9.5 17h-19L12 3z"/><path d="M12 10v5M12 18h.01"/></svg>
+      <div>
+        <strong>Use official builds only</strong>
+        <p>Only download LiveContainer from the links on this page. Closed third-party builds can read everything inside your containers, including passwords and tokens.</p>
+      </div>
     </div>
-    <p>Pick a package, download the IPA, then follow the <a href="../installation/">Installation</a> guide.</p>
 
     <h2>Which package?</h2>
-    <ul>
-      <li><strong>LiveContainer</strong> (standalone) - if you already use AltStore or SideStore.</li>
-      <li><strong>LiveContainer + SideStore</strong> - if you want both in one free app slot.</li>
-    </ul>
-    <p><strong>Stable</strong> is better for daily use. <strong>Nightly</strong> is newer and may change faster.</p>
-
-    <h2>LiveContainer 3.8.0 <span class="release-tag release-tag--stable">Stable</span></h2>
-    <div class="download-grid">
-      <a class="download-item" href="https://github.com/LiveContainer/LiveContainer/releases/download/3.8.0/LiveContainer.ipa">
-        <strong>LiveContainer.ipa</strong>
-        <span>Standalone package</span>
-        <span class="download-item__action">Download</span>
-      </a>
-      <a class="download-item" href="https://github.com/LiveContainer/LiveContainer/releases/download/3.8.0/LiveContainer+SideStore.ipa">
-        <strong>LiveContainer + SideStore.ipa</strong>
-        <span>Bundled with SideStore</span>
-        <span class="download-item__action">Download</span>
-      </a>
+    <div class="dl-choice">
+      <div class="dl-choice__item">
+        <strong>LiveContainer</strong>
+        <span>Standalone. Pick this if you already use AltStore or SideStore.</span>
+      </div>
+      <div class="dl-choice__item">
+        <strong>LiveContainer + SideStore</strong>
+        <span>Both in one free app slot. Pick this if you want a single install.</span>
+      </div>
+      <div class="dl-choice__item">
+        <strong>Stable vs Nightly</strong>
+        <span><b>Stable</b> is better for daily use. <b>Nightly</b> is newer and may change faster.</span>
+      </div>
     </div>
 
-    <h2>Nightly Release <span class="release-tag">20260808</span></h2>
+    <h2>Available builds</h2>
     <div class="download-grid">
-      <a class="download-item" href="https://github.com/LiveContainer/LiveContainer/releases/download/nightly/LiveContainer.ipa">
-        <strong>LiveContainer.ipa</strong>
-        <span>Standalone package</span>
-        <span class="download-item__action">Download</span>
-      </a>
-      <a class="download-item" href="https://github.com/LiveContainer/LiveContainer/releases/download/nightly/LiveContainer+SideStore.ipa">
-        <strong>LiveContainer + SideStore.ipa</strong>
-        <span>Bundled with SideStore</span>
-        <span class="download-item__action">Download</span>
-      </a>
+      <div class="download-card">
+        <div class="download-card__top">
+          <span class="release-tag release-tag--stable">Stable</span>
+          <span class="download-card__ver">3.8.0</span>
+        </div>
+        <h3>LiveContainer.ipa</h3>
+        <p>Standalone package</p>
+        <a class="btn btn--solid download-card__btn" href="https://github.com/LiveContainer/LiveContainer/releases/download/3.8.0/LiveContainer.ipa" rel="noopener">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 21h14"/></svg>
+          Download
+        </a>
+      </div>
+      <div class="download-card">
+        <div class="download-card__top">
+          <span class="release-tag release-tag--stable">Stable</span>
+          <span class="download-card__ver">3.8.0</span>
+        </div>
+        <h3>LiveContainer + SideStore.ipa</h3>
+        <p>Bundled with SideStore</p>
+        <a class="btn btn--solid download-card__btn" href="https://github.com/LiveContainer/LiveContainer/releases/download/3.8.0/LiveContainer+SideStore.ipa" rel="noopener">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 21h14"/></svg>
+          Download
+        </a>
+      </div>
+      <div class="download-card">
+        <div class="download-card__top">
+          <span class="release-tag ">Nightly</span>
+          <span class="download-card__ver">20260808</span>
+        </div>
+        <h3>LiveContainer.ipa</h3>
+        <p>Standalone package</p>
+        <a class="btn btn--solid download-card__btn" href="https://github.com/LiveContainer/LiveContainer/releases/download/nightly/LiveContainer.ipa" rel="noopener">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 21h14"/></svg>
+          Download
+        </a>
+      </div>
+      <div class="download-card">
+        <div class="download-card__top">
+          <span class="release-tag ">Nightly</span>
+          <span class="download-card__ver">20260808</span>
+        </div>
+        <h3>LiveContainer + SideStore.ipa</h3>
+        <p>Bundled with SideStore</p>
+        <a class="btn btn--solid download-card__btn" href="https://github.com/LiveContainer/LiveContainer/releases/download/nightly/LiveContainer+SideStore.ipa" rel="noopener">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 21h14"/></svg>
+          Download
+        </a>
+      </div>
     </div>
 
     <h2>After you download</h2>
-    <ol>
-      <li>Install the IPA with AltStore, SideStore, Impactor, or iloader (see Installation).</li>
-      <li>Import your signing certificate.</li>
-      <li>Run JIT-Less Mode Diagnose until the test passes.</li>
+    <ol class="dl-steps">
+      <li><span class="dl-steps__n">1</span><div><strong>Install the IPA</strong><span>Use AltStore, SideStore, Impactor, or iloader (see Installation).</span></div></li>
+      <li><span class="dl-steps__n">2</span><div><strong>Import your certificate</strong><span>Import your signing certificate inside LiveContainer.</span></div></li>
+      <li><span class="dl-steps__n">3</span><div><strong>Run the diagnose</strong><span>Run JIT-Less Mode Diagnose until the test passes.</span></div></li>
     </ol>
     <div class="cta-row" style="margin:1.25rem 0 0;">
       <a class="btn btn--solid" href="../installation/">Go to Installation</a>
+      <a class="btn btn--outline" href="../docs/installation/">Full installation docs</a>
     </div>
 
     <h2>Do not use these installers</h2>
     <p>These tools are not supported and often break entitlements:</p>
-    <ul>
+    <ul class="dl-avoid">
       <li>Sideloadly</li>
       <li>i4 / 3u Tools</li>
       <li>NB Tool</li>
