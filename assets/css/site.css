@@ -1198,6 +1198,12 @@ pre code {
   width: 100%;
 }
 
+.download-card__btn.is-disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 @media (max-width: 1000px) {
   .download-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
